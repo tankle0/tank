@@ -26,11 +26,16 @@ jobs:
       #   with:
       #     version: 6.20.3
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
+      # - uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '16'
           # cache: 'pnpm'
+      - name: 使用 Node.js ${{ env.NODE_VERSION }} 构建包
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
+          
       - name: Install dependencies
         run: npm install
 
