@@ -19,7 +19,7 @@ export default defineConfig({
       }
     )
   ],
-  base:'/tank/',
+  base: process.env.NODE_ENV === 'production' ? '/tank/' : '/',
   server:{
     open:true,
     port: 8080,
