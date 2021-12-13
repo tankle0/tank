@@ -21,10 +21,20 @@ jobs:
         # 拉取代码
         uses: actions/checkout@master
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'pnpm'
+          
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           npm ci
-          npm install
+          pnpm install
           npm run build
 
       - name: Build and Deploy
