@@ -21,18 +21,18 @@ jobs:
         # 拉取代码
         uses: actions/checkout@master
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.20.3
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v2.0.1
+      #   with:
+      #     version: 6.20.3
 
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-          cache: 'pnpm'
+          # cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build Site
         run: npm run build   
