@@ -81,7 +81,7 @@ function select(data){
             :src="badUrl"
           />
           <div :class="['text',{'activeText': isActive === 'bad'}]">
-            很糟糕
+            需努力
           </div>
         </div>
         <div class="textBox" @click="choose('fine')">
