@@ -1,0 +1,33 @@
+{
+  "name": "vue3-evaluation",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview --port 8090"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "canvas": "^2.8.0",
+    "fastclick": "^1.0.6",
+    "vant": "^3.3.6",
+    "vconsole": "^3.9.5",
+    "vue": "^3.2.16",
+    "vue-qr": "^3.2.2",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "autoprefixer": "^10.4.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "sass": "^1.44.0",
+    "vite": "^2.6.4",
+    "vite-plugin-style-import": "^1.4.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "homepage": "https://tankle0.github.io/tank/"
+}
